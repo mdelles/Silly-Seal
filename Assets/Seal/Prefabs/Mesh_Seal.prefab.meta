@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7eb95ac5d84f44e4b8ba5c7bb15d350e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 193811
+  packageName: Arctic Seal
+  packageVersion: 1.0
+  assetPath: Assets/Seal/Prefabs/Mesh_Seal.prefab
+  uploadId: 429541

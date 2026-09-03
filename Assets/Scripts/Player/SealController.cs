@@ -29,10 +29,20 @@ namespace SillySeal.Player
         [SerializeField] private float swimVerticalSpeed = 3f;
         [SerializeField] private float swimTurnSpeed = 360f;
 
+        [Header("Animation")]
+        [Tooltip("Animator state names from Seal_Anim.controller. The controller has no parameters, so states are played directly by name.")]
+        [SerializeField] private string landIdleState = "Seal|Idle_on_land_1";
+        [SerializeField] private string landWalkState = "Seal|Walk_F_IP";
+        [SerializeField] private string swimIdleState = "Seal|Swim_idle_horisontal";
+        [SerializeField] private string swimMoveState = "Seal|Swim_F_IP";
+        [SerializeField] private float animCrossfadeTime = 0.15f;
+        [SerializeField] private float animMoveThreshold = 0.1f;
+
         private CharacterController controller;
         private Vector3 verticalVelocity;
         private bool isInWater;
         private bool jumpQueued;
+        private string currentAnimState;
 
         public bool IsInWater => isInWater;
 
@@ -41,6 +51,9 @@ namespace SillySeal.Player
             controller = GetComponent<CharacterController>();
             if (cameraTransform == null && Camera.main != null)
                 cameraTransform = Camera.main.transform;
+
+            if (animator != null)
+                animator.applyRootMotion = false;
 
             if (inputActions != null)
             {
@@ -85,13 +98,25 @@ namespace SillySeal.Player
 
             jumpQueued = false;
 
-            if (animator != null)
-            {
-                Vector3 horizontalVelocity = controller.velocity;
-                horizontalVelocity.y = 0f;
-                animator.SetFloat("Speed", horizontalVelocity.magnitude);
-                animator.SetBool("IsSwimming", isInWater);
-            }
+            UpdateAnimation();
+        }
+
+        private void UpdateAnimation()
+        {
+            if (animator == null) return;
+
+            Vector3 horizontalVelocity = controller.velocity;
+            horizontalVelocity.y = 0f;
+            bool isMoving = horizontalVelocity.sqrMagnitude > animMoveThreshold * animMoveThreshold;
+
+            string desiredState = isInWater
+                ? (isMoving ? swimMoveState : swimIdleState)
+                : (isMoving ? landWalkState : landIdleState);
+
+            if (desiredState == currentAnimState) return;
+
+            currentAnimState = desiredState;
+            animator.CrossFadeInFixedTime(desiredState, animCrossfadeTime);
         }
 
         public void EnterWater()

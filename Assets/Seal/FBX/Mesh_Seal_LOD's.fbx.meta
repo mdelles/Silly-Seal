@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 1429a4eabb4ca0f409cb602e02af3fc9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base
+    100002: Eye.L
+    100004: Eye.R
+    100006: flipper_B_1.L
+    100008: flipper_B_1.R
+    100010: flipper_B_2.L
+    100012: flipper_B_2.R
+    100014: flipper_B_3.L
+    100016: flipper_B_3.R
+    100018: flipper_F_1.L
+    100020: flipper_F_1.R
+    100022: flipper_F_2.L
+    100024: flipper_F_2.R
+    100026: flipper_F_3.L
+    100028: flipper_F_3.R
+    100030: flipper_F_4.L
+    100032: flipper_F_4.R
+    100034: flipper_F_IK.L
+    100036: flipper_F_IK.R
+    100038: Head
+    100040: //RootNode
+    100042: Mouth
+    100044: Neck_1
+    100046: Neck_2
+    100048: Pelvis
+    100050: Root
+    100052: Seal
+    100054: Seal_Mesh
+    100056: Seal_Mesh_LOD_1
+    100058: Seal_Mesh_LOD_2
+    100060: Seal_Mesh_LOD_3
+    100062: Spine_1
+    100064: Spine_2
+    100066: Spine_3
+    100068: Spine_4
+    400000: Base
+    400002: Eye.L
+    400004: Eye.R
+    400006: flipper_B_1.L
+    400008: flipper_B_1.R
+    400010: flipper_B_2.L
+    400012: flipper_B_2.R
+    400014: flipper_B_3.L
+    400016: flipper_B_3.R
+    400018: flipper_F_1.L
+    400020: flipper_F_1.R
+    400022: flipper_F_2.L
+    400024: flipper_F_2.R
+    400026: flipper_F_3.L
+    400028: flipper_F_3.R
+    400030: flipper_F_4.L
+    400032: flipper_F_4.R
+    400034: flipper_F_IK.L
+    400036: flipper_F_IK.R
+    400038: Head
+    400040: //RootNode
+    400042: Mouth
+    400044: Neck_1
+    400046: Neck_2
+    400048: Pelvis
+    400050: Root
+    400052: Seal
+    400054: Seal_Mesh
+    400056: Seal_Mesh_LOD_1
+    400058: Seal_Mesh_LOD_2
+    400060: Seal_Mesh_LOD_3
+    400062: Spine_1
+    400064: Spine_2
+    400066: Spine_3
+    400068: Spine_4
+    2100000: Seal_M
+    2100002: Seal_M.001
+    2100004: Seal_M.002
+    2100006: Seal_M.003
+    4300000: Seal_Mesh
+    4300002: Seal_Mesh_LOD_1
+    4300004: Seal_Mesh_LOD_2
+    4300006: Seal_Mesh_LOD_3
+    9500000: //RootNode
+    13700000: Seal_Mesh
+    13700002: Seal_Mesh_LOD_1
+    13700004: Seal_Mesh_LOD_2
+    13700006: Seal_Mesh_LOD_3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seal_M
+    second: {fileID: 2100000, guid: c56783a378bc9fe409e78c78ead90912, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seal_M.001
+    second: {fileID: 2100000, guid: c56783a378bc9fe409e78c78ead90912, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seal_M.002
+    second: {fileID: 2100000, guid: c56783a378bc9fe409e78c78ead90912, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seal_M.003
+    second: {fileID: 2100000, guid: c56783a378bc9fe409e78c78ead90912, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 193811
+  packageName: Arctic Seal
+  packageVersion: 1.0
+  assetPath: Assets/Seal/FBX/Mesh_Seal_LOD's.fbx
+  uploadId: 429541

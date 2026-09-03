@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 319d87013af7d3e45a5c7fb932d54f02
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 193811
+  packageName: Arctic Seal
+  packageVersion: 1.0
+  assetPath: Assets/Seal/Seal_Anim.controller
+  uploadId: 429541
